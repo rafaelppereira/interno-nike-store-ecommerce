@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  padding: 5rem 0;
+
+  .content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 0.4rem;
+        }
+      }
+    }
+
+    .productList {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 6rem;
+      gap: 25px;
+
+      .productSingle {
+        .productContent {
+          border: 1px solid rgb(233, 233, 233);
+          padding: 1.7rem;
+          border-radius: 0.25rem 0.25rem 0 0;
+        }
+
+        .productImage img {
+          width: 100%;
+          max-height: 100%;
+        }
+
+        .titleProduct {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #121414;
+          }
+
+          h5 {
+            color: var(--link);
+            text-transform: uppercase;
+          }
+        }
+        h3 {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+
+        h4 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 0.6rem;
+
+          button {
+            font-size: 1.4rem;
+            color: var(--orange);
+          }
+        }
+
+        .buttonAddCart {
+          background: var(--orange);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.6rem 0;
+          width: 100%;
+          color: var(--white);
+
+          border-radius: 0 0 0.25rem 0.25rem;
+
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(0.9);
+          }
+
+          .iconAdd {
+            margin-right: 0.6rem;
+            position: relative;
+
+            > div {
+              position: absolute;
+              right: -3px;
+              top: 0;
+
+              font-size: 0.5rem;
+
+              background: var(--gray-700);
+              width: 0.7rem;
+              height: 0.7rem;
+
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1170px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

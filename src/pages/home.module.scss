@@ -1,0 +1,70 @@
+.about {
+  width: 100%;
+  padding: 5rem 0;
+
+  .aboutContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #121414;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--link);
+
+      &:hover svg {
+        margin-left: 1rem;
+      }
+
+      svg {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+
+        transition: margin-left 0.2s;
+      }
+    }
+
+    > div {
+      width: 50%;
+      padding: 0 2rem;
+    }
+
+    a {
+      background-image: url("../../public/aboutImage.jpg");
+      background-position: bottom;
+      background-size: cover;
+
+      width: 100%;
+      height: 400px;
+
+      display: inline-flex;
+      box-shadow: 5px 5px 36px 2px rgba(206, 206, 206, 0.49);
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+
+        text-align: center;
+      }
+
+      button {
+        display: inline-block;
+      }
+
+      a {
+        margin-top: 6rem;
+      }
+    }
+  }
+}
