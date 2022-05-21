@@ -97,6 +97,12 @@
       "title": "Nike Air VaporMax",
       "price": 359.9,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Nike Air VaporRax",
+      "price": 759.9,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
     }
   ]
 }
