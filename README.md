@@ -7,7 +7,6 @@
 <p display="flex" align="center">
   yarn 
   yarn dev
-  
   yarn server - to start the fake server
 </p>
 
