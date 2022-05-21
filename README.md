@@ -1,4 +1,4 @@
-<h1 align="center">Temporizer App</h1>
+<h1 align="center">Nike Store Ecommerce</h1>
 
 <p align="center">The Temporizer is for you to practice the pomodoro methodology, both for work and for studying</p>
 
